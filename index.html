@@ -51,7 +51,7 @@
         
           <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
         
-        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+        <a id="nav-search-btn" class="nav-icon" title="Suche"></a>
       </nav>
       <div id="search-form-wrap">
         <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
@@ -61,6 +61,61 @@
 </header>
       <div class="outer">
         <section id="main">
+  
+    <article id="post-Angular.js 数据绑定" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/04/15/Angular.js 数据绑定/" class="article-date">
+  <time datetime="2018-04-15T14:34:40.975Z" itemprop="datePublished">2018-04-15</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/04/15/Angular.js 数据绑定/">Angular.js数据绑定</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>##1、数据模型对象(model object)<br>•指$scope对象，是一个简单的JS对象，其中的属性可以被视图访问，也可以同控制器进行交互.</p>
+<p>##2、ng-model<br>•在输入字段上使用ng-model实现数据绑定，目前仅通过视图实现数据绑定。</p>
+<p>###例子</p>
+<pre><code>&lt;div ng-controller = &apos;timeclock&apos;&gt;
+&lt;input ng-model = &quot;stu.name&quot; type = &quot;text&quot; placeholder = &quot;Your name&quot;&gt;
+&lt;h1&gt;Hello{{ stu.name}}&lt;/h1&gt;
+&lt;/div&gt;
+
+
+function timeclock($scope, $timeout){
+  var updateclock = function(){
+  $scope.clock = new Date();
+  $timeout(function()(
+      updateclock();},1000);
+  };
+    updateclock();
+};
+</code></pre><hr>
+<p>感谢您的阅读<br>2018 年 04月 15日    </p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/04/15/Angular.js 数据绑定/" data-id="cjg0x0s5r0001h4un6gynz5zp" class="article-share-link">Teilen</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
   
     <article id="post-SAAD-HW2" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
@@ -100,7 +155,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/03/22/SAAD-HW2/" data-id="cjf24lcr10001scunqq4b9qzq" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/03/22/SAAD-HW2/" data-id="cjg0x0s2e0000h4unf3ythl6s" class="article-share-link">Teilen</a>
       
       
     </footer>
@@ -157,7 +212,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/03/14/SAAD-HW1/" data-id="cjf24lcqm0000scunrcmnw87l" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/03/14/SAAD-HW1/" data-id="cjg0x0s910002h4unygs8njjg" class="article-share-link">Teilen</a>
       
       
     </footer>
@@ -183,9 +238,9 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
+    <h3 class="widget-title">Archiv</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/03/">March 2018</a></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/04/">April 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/03/">March 2018</a></li></ul>
     </div>
   </div>
 
@@ -193,9 +248,13 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
+    <h3 class="widget-title">letzter Beitrag</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2018/04/15/Angular.js 数据绑定/">Angular.js数据绑定</a>
+          </li>
         
           <li>
             <a href="/2018/03/22/SAAD-HW2/">SAADHW2</a>
